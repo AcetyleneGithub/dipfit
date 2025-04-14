@@ -62,11 +62,10 @@ defaultvolume.o = [0 0 0];
 % ----------------------
 %#function pop_dipfit_settings
 folder = fileparts(which('pop_dipfit_settings'));
-template_models = [];
 
 try
     delim  = folder(end);
-%    template_models = [];
+    template_models = [];
     template_models(end+1).name     = 'Template Spherical Four-Shell (BESA)';
     template_models(end).shortname = 'standardBESA';
     template_models(end).hdmfile  = 'standard_BESA.mat';
